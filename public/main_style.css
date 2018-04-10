@@ -1,0 +1,146 @@
+/* Main Style Sheet */
+
+
+body{
+	background: #fff url("../images/gradient_squares.png");
+}
+/*
+a:link{
+
+}
+
+a:visited{
+
+}
+
+a:hover{
+
+}
+
+a:active{
+
+}
+*/
+
+@media (min-width: 769x) {
+	.navbar-right {
+    float: right!important;
+  }
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    overflow: visible!important;
+    border: none;
+    margin-right: 15px;
+  }
+  .navbar-nav>li {
+    float: left;
+    margin: 5px 0;
+  }
+  .navbar-header {
+    float: left
+  }
+  .navbar-toggle {
+    display: none
+  }
+}
+
+#navStyle{
+	font-size:1.2em;
+	font-family: ;
+	color: #a8c2ea;
+	margin-right: 0.5em;
+	display: inline-block;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+
+#navStyle:hover{
+	color: #eee;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+
+#navStyle:active{
+	background: #555;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+}
+
+
+
+#recipeNavTitle{
+	color: #a8c2ea;
+	display: block;
+	font-family: ;
+	font-size: 1.5em;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+}
+
+#recipeNavTitle:hover{
+	color: #eee;
+}
+
+#mainDiv {
+	padding: 1em;
+	margin: 1em;
+	background-color: #eee/*#a8c2ea*/;
+}
+
+.mk-navbar {
+	margin-left: 1em;
+}
+
+/* Style for the Query divs */
+.queryDiv {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	padding: 1em;
+	margin: 1em;
+}
+
+.queryDivHeader {
+	text-align: left;
+	margin-bottom: 0.1em;
+	padding: 0em;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.queryDivImage {
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	margin-left: 0.1em;
+}
+
+.queryDivPara {
+	text-align: left;
+	margin-left: 0.1em;
+}
+.footerBottom{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+.searchBar {
+}
+/*
+input[type=text] {
+	width: 100%;
+	-moz-transition: width .4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    box-sizing: border-box;
+    border-left: 1px solid #eee;
+    -webkit-transition: border 0.5s;
+    transition: border 0.5s;
+}
+
+input[type=text]:focus {
+    width: 50em;
+	border: 2px solid #a8c2ea;
+}*/
