@@ -17,15 +17,6 @@ class App extends Component {
   render() {
     return (
 		<div className="App">
-			<div class="g-signin2" data-onsuccess="onSignIn">
-			</div>
-			<div class="data">
-				<p>Profile Details</p>
-				<img id = "pic" class ="img-circle" width="100" height="100"/>
-				<p> Email Address</p>
-				<p id="email" class="alert alert-danger"></p>
-				<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
-			</div>
 			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
 				<div class = "container-fluid">
 					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
@@ -37,6 +28,16 @@ class App extends Component {
 						<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
 						<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 					</ul>
+					
+					<div class="g-signin2" data-onsuccess="onSignIn">
+					</div>
+					<div class="data">
+						<p>Profile Details</p>
+						<img id = "pic" class ="img-circle" width="100" height="100"/>
+						<p> Email Address</p>
+						<p id="email" class="alert alert-danger"></p>
+						<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
+					</div>
 				</div>
 			</nav>
 			
