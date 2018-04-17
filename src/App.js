@@ -18,31 +18,33 @@ class App extends Component {
     return (
 		<div className="App">
 			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
-				<div class = "container-fluid">
+				<div class = "container-fluid">	
+				
 					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
+					<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive"
+					aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
+						<span class = "navbar-toggler-icon"></span>
+					</button>						
 					
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>	
-					
-					<div class = "collapse navbar-collapse" id = "navbarResponsive">						
+					<div class = "collapse navbar-collapse" id = "myNavbar navbarResponsive">						
 						<ul class = "navbar-nav mr-auto mk-navbar">
 							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 							<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
+							<li class = "nav-item"><a href ='/schedule' id = "navStyle" class = "nav-link">Cookbook</a></li>
 						</ul>
 						
 						<ul class="nav navbar-nav navbar-right">
-							<li class = "nav-item">&nbsp;<a id = "navStyle" class = "nav-link" href="/login"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+							<li class = "nav-item"> &nbsp;<a id = "navStyle" class = "nav-link" href="/login">
+							<span class = "glyphicon glyphicon-user"></span> Account</a></li>
 						</ul>
 						
-						<div class="g-signin2" data-onsuccess="onSignIn">
-						</div>
+						<div class = "g-signin2" data-onsuccess = "onSignIn"></div>						
 						
 						<p>Profile Details</p>
-						<div class="data">
-							<img id = "pic" class ="img-circle" width="100" height="100"/>
-							<p> Email Address</p>
-							<p id="email" class="alert alert-danger"></p>
+						<div class = "data">
+							<img id = "pic" class = "img-circle" width = "100" height = "100"/>
+							<p>Email Address:</p>
+							<p id = "email" class = "alert alert-danger"></p>
 							<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
 						</div>
 						
