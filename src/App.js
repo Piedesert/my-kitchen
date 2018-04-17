@@ -25,23 +25,28 @@ class App extends Component {
 						<span class="navbar-toggler-icon"></span>
 					</button>	
 					
+					<div class = "collapse navbar-collapse" id = "navbarResponsive">						
+						<ul class = "navbar-nav mr-auto mk-navbar">
+							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
+							<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
+						</ul>
+						
 						<ul class="nav navbar-nav navbar-right">
 							<li class = "nav-item">&nbsp;<a id = "navStyle" class = "nav-link" href="/login"><span class="glyphicon glyphicon-user"></span> Account</a></li>
 						</ul>
-					<div class="g-signin2" data-onsuccess="onSignIn">
-					</div>
+						
+						<div class="g-signin2" data-onsuccess="onSignIn">
+						</div>
+						
 						<p>Profile Details</p>
-					<div class="data">
-						<img id = "pic" class ="img-circle" width="100" height="100"/>
-						<p> Email Address</p>
-						<p id="email" class="alert alert-danger"></p>
-						<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
+						<div class="data">
+							<img id = "pic" class ="img-circle" width="100" height="100"/>
+							<p> Email Address</p>
+							<p id="email" class="alert alert-danger"></p>
+							<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
+						</div>
+						
 					</div>
-					
-					</ul>
-						<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
-						<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
-					<ul class = "navbar-nav mr-auto mk-navbar">
 				</div>
 			</nav>
 			
