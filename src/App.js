@@ -17,6 +17,15 @@ class App extends Component {
   render() {
     return (
 		<div className="App">
+			<div class="g-signin2" data-onsuccess="onSignIn">
+			</div>
+			<div class="data">
+				<p>Profile Details</p>
+				<img id = "pic" class ="img-circle" width="100" height="100"/>
+				<p> Email Address</p>
+				<p id="email" class="alert alert-danger"></p>
+				<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
+			</div>
 			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
 				<div class = "container-fluid">
 					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
