@@ -60,7 +60,6 @@ class App extends Component {
 					<Route path = "/recipes/:recipeID" component = {RecipeView}/>
 				</div>
 			</Router>			
-			
 		</div>		
     );
   }
