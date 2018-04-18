@@ -26,7 +26,7 @@ class App extends Component {
 						<span class = "navbar-toggler-icon"></span>
 					</button>						
 					
-					<div class = "collapse navbar-collapse" id = "myNavbar navbarResponsive">						
+					<div class = "collapse navbar-collapse" id = "navbarResponsive">						
 						<ul class = "navbar-nav mr-auto mk-navbar">
 							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 							<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
