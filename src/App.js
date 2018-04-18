@@ -28,14 +28,8 @@ class App extends Component {
 					
 					<div class = "collapse navbar-collapse" id = "navbarResponsive">						
 						<ul class = "navbar-nav mr-auto mk-navbar">
-							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 							<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
-							<li class = "nav-item"><a href ='/schedule' id = "navStyle" class = "nav-link">Cookbook</a></li>
-						</ul>
-						
-						<ul class="nav navbar-nav navbar-right">
-							<li class = "nav-item"> &nbsp;<a id = "navStyle" class = "nav-link" href="/login">
-							<span class = "glyphicon glyphicon-user"></span> Account</a></li>
+							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 						</ul>
 						
 						<div class = "g-signin2" data-onsuccess = "onSignIn"></div>						
