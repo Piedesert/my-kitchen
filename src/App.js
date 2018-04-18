@@ -20,7 +20,7 @@ class App extends Component {
 			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
 				<div class = "container-fluid">	
 				
-					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">The Official Kitchen</a>
+					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
 					<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive"
 					aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
 						<span class = "navbar-toggler-icon"></span>
