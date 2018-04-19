@@ -29,7 +29,10 @@ class Schedule extends Component {
 			<div className = "container-fluid">
 				<div class = "row">
 					<div class = "col-6">
-						<p>Google Calendar lies here.</p>
+						<div id="divifm">
+							<iframe id="ifmCalendar" src="https://www.google.com/calendar/embed?height=550&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=24tn4fht2tr6m86e%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Asia%2FCalcutta" width="600" height="520" frameborder="0" scrolling="no">
+							</iframe>
+						</div>
 					</div>
 					<div class = "col-6">
 						<div class="input-group mb-3">
