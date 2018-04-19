@@ -40,20 +40,20 @@ class App extends Component {
 	
   render() {
     return (
-		<div className = "App">
-			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark" id = "navStyle">
-				<div class = "container-fluid">	
-					
-					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
-					<button class = "navbar-toggler collapsed" type = "button" data-toggle = "collapse" data-target = ".navbar-collapse"
+		<div className="App">
+			<nav className = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
+				<div className = "container-fluid">	
+				
+					<a id = "recipeNavTitle" className = "navbar-brand" href = "/home">myKitchen</a>
+					<button className = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive"
 					aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
-						<span class = "navbar-toggler-icon"></span>
+						<span className = "navbar-toggler-icon"></span>
 					</button>						
 					
-					<div class = "collapse navbar-collapse" id = "navbarResponsive">						
-						<ul class = "navbar-nav mr-auto mk-navbar">
-							<li class = "nav-item"><a href = '/search' id = "navStyle" class = "nav-link">Find Recipes</a></li>
-							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
+					<div className = "collapse navbar-collapse" id = "navbarResponsive">						
+						<ul className = "navbar-nav mr-auto mk-navbar">
+							<li className = "nav-item"><a href = '/search' id = "navStyle" className = "nav-link">Find Recipes</a></li>
+							<li className = "nav-item"><a href = '/schedule' id = "navStyle" className = "nav-link">Schedule</a></li>
 						</ul>
 						
 						{!this.state.loggedIn &&
@@ -66,11 +66,9 @@ class App extends Component {
 						}
 						
 						{this.state.loggedIn &&
-						<div>
-							<p>Profile Details</p>
-							<img src = {this.state.picUrl} id = "pic" class = "img-circle" width = "100" height = "100" />
-							<p>Email Address</p>
-							<p id = "email" class = "alert alert-danger">{this.state.email}</p>
+						<div className = "row">
+							<img src = {this.state.picUrl} id = "pic" className = "img-circle" width = "50" height = "50" />
+							<p id = "email" className = "alert alert-danger">{this.state.email}</p>
 						</div>
 						}
 					</div>
@@ -85,10 +83,7 @@ class App extends Component {
 					<Route path = "/recipes/:recipeID" component = {RecipeView}/>
 				</div>
 			</Router>
-
-			
-			
-		</div>	
+		</div>		
     );
   }
 }

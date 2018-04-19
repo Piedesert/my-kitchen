@@ -52,25 +52,25 @@ class Search extends Component {
 	
 	render() {
 		return (
-			<div class = "container-fluid">
-				<div class = "row">
-					<div class = "col-3"></div>
-					<div class = "col-6">
+			<div className = "container-fluid">
+				<div className = "row">
+					<div className = "col-3"></div>
+					<div className = "col-6">
 						<br/>
-						<div class = "input-group input-group-lg">
-							<input type = "text" class = "form-control" value = {this.state.tempVal} onChange = {this.handleChangedVal}/>
-							<div class = "input-group-append">
-								<button class = "btn btn-outline-secondary" type = "button" onClick={this.queryOnVal}>Search</button>
+						<div className = "input-group input-group-lg">
+							<input type = "text" className = "form-control" value = {this.state.tempVal} onChange = {this.handleChangedVal}/>
+							<div className = "input-group-append">
+								<button className = "btn btn-outline-secondary" type = "button" onClick={this.queryOnVal}>Search</button>
 							</div>
 						</div>
 					</div>
-					<div class = "col-3"></div>
+					<div className = "col-3"></div>
 				</div>
 				
 				<br/>
 				
 				{this.state.val != "" && 
-					<h2 class = "resultsFor">Results for "{this.state.val}"</h2>
+					<h6 className = "display-4">Results for "{this.state.val}"</h6>
 				}
 				
 				{this.state.val != "" && this.state.jsonData.map((entry, i)=>
