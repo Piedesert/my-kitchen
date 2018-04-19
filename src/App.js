@@ -13,7 +13,7 @@ import Search from './searchComponent';
 import Schedule from './scheduleComponent';
 import Default from './defaultComponent';
 import RecipeView from './recipeView';
-import GoogleLogin from 'react-google-login';
+import { GoogleLogout, GoogleLogin } from 'react-google-login';
 	
 class App extends Component {
 	responseGoogleSuccess(response) {
@@ -41,7 +41,7 @@ class App extends Component {
 						</ul>
 						
 						<GoogleLogin
-							clientId = "122146894892-ouqdfmr7105f55aiim0vg1glrcf0atnk.apps.googleusercontent.com"
+							clientId = ""
 							buttonText = "Login"
 							onSuccess = {this.responseGoogleSuccess}
 							onFailure = {this.responseGoogleFail}
