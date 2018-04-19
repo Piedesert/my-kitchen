@@ -70,22 +70,23 @@ class Search extends Component {
 				<br/>
 				
 				{this.state.val != "" && 
-					<h6 class = "display-4">Results for "{this.state.val}"</h6>
+					<h2 class = "resultsFor">Results for "{this.state.val}"</h2>
 				}
 				
 				{this.state.val != "" && this.state.jsonData.map((entry, i)=>
-					<div class = "queryDiv row">
+					<div class = "queryDiv row" id = "result">
 						<div class = "col-1">
-							<img class = "queryDivImage" src = {entry.smallImageUrls[0]}/>
+							<img class = "resultImg" src = {entry.smallImageUrls[0]}/>
 						</div>
 						<div class = "col-11">
-							<Link to = {"/recipes/" + entry.id} params = {{recipeID: entry.id}}><h6 class = "display-4 queryDivHeader">{entry.recipeName} ({entry.rating}*)</h6></Link>
-							<p class = "queryDivPara">
+							<Link to = {"/recipes/" + entry.id} params = {{recipeID: entry.id}}><h3>{entry.recipeName} 
+							&nbsp;({entry.rating} <span class="glyphicon glyphicon-star"></span>)</h3></Link>
+							<h4>
 								Cooking Time: {entry.totalTimeInSeconds}s <br/>
 								Ingredients: {entry.ingredients.map((ingredient, i) => 
 									<span key = {i}>{ingredient} </span>
 								)}
-							</p>
+							</h4>
 						</div>
 					</div>
 				)}

@@ -1,5 +1,8 @@
 /* Main Style Sheet */
 
+html, body { 
+    height: 100%; 
+}
 
 body{
 	background: #fff url("../images/gradient_squares.png");
@@ -24,10 +27,9 @@ a:active{
 
 #navStyle{
 	font-size:1.2em;
-	font-family: ;
+	font-family: Helvetica;
 	color: #a8c2ea;
-	margin-right: 0.5em;
-	display: inline-block;
+	margin-right: 0.5em;	
 	transition: color .25s ease-in-out;
 	-moz-transition: color .25s ease-in-out;
 	-webkit-transition: color .25s ease-in-out;
@@ -50,7 +52,7 @@ a:active{
 #recipeNavTitle{
 	color: #a8c2ea;
 	display: block;
-	font-family: ;
+	font-family: Helvetica;
 	font-size: 1.5em;
 	transition: color .25s ease-in-out;
 	-moz-transition: color .25s ease-in-out;
@@ -68,14 +70,66 @@ a:active{
 }
 
 #footfoot {
-	position: absolute;
-	margin-top: 1em; /* negative value of footer height */
-	clear: both;
-	padding-top: 10px;
+	position: fixed;
+    left: 0;
 	bottom: 0;
     width: 100%;
+	margin-top: 1em; 
+	clear: both;
+	padding-top: 10px;	
 }
 
-#infoCollumn{
-	background: #000;
+#infoCol{
+	background: #eee;
+	margin: 0;
+	padding: 1em;
+	font-family: Helvetica;
+}
+
+.resultsFor{
+	text-align: left;
+	font-family: Helvetica;
+	color: #666;
+	padding: 1em;
+}
+
+.resultImg{
+	border: 2px outset #a8c2ea;
+	border-radius: 0.25em;
+}
+
+#result{
+	text-align: left;
+	font-family: Helvetica;
+	color: #333;
+	padding: 1em;
+	font-size: 1em;
+	background: #eee;
+	border: 2px ridge #a8c2ea;
+	border-radius: 0.5em;
+	margin: 0.5em;
+	text-decoration: none;
+}
+
+#result a:link{
+	color: #333;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+	text-decoration: none;
+}
+
+#result a:hover{
+	color: #7796c4;
+	transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-webkit-transition: color .25s ease-in-out;
+	text-decoration: none;
+}
+#result a:active{
+	background: #333;
+	transition: background .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out;
+	text-decoration: none;
 }

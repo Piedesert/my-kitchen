@@ -41,11 +41,11 @@ class App extends Component {
   render() {
     return (
 		<div className="App">
-			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark">
+			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark" id = "navStyle">
 				<div class = "container-fluid">	
-				
+					
 					<a id = "recipeNavTitle" class = "navbar-brand" href = "/home">myKitchen</a>
-					<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive"
+					<button class = "navbar-toggler collapsed" type = "button" data-toggle = "collapse" data-target = ".navbar-collapse"
 					aria-controls = "navbarResponsive" aria-expanded = "false" aria-label = "Toggle navigation">
 						<span class = "navbar-toggler-icon"></span>
 					</button>						
@@ -75,7 +75,7 @@ class App extends Component {
 						}
 					</div>
 				</div>
-			</nav>
+			</nav>			
 			
 			<Router>
 				<div>
@@ -84,8 +84,11 @@ class App extends Component {
 					<Route path = "/schedule" component = {Schedule}/>
 					<Route path = "/recipes/:recipeID" component = {RecipeView}/>
 				</div>
-			</Router>			
-		</div>		
+			</Router>
+
+			
+			
+		</div>	
     );
   }
 }
