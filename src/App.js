@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.svg';
 import './App.css';
 import {
@@ -12,8 +13,15 @@ import Search from './searchComponent';
 import Schedule from './scheduleComponent';
 import Default from './defaultComponent';
 import RecipeView from './recipeView';
-
+import GoogleLogin from 'react-google-login';
+	
 class App extends Component {
+	responseGoogleSuccess(response) {
+		console.log("Success", response);
+	}
+	responseGoogleFail(response) {
+		console.log("Fail", response);
+	}
   render() {
     return (
 		<div className="App">
@@ -32,16 +40,12 @@ class App extends Component {
 							<li class = "nav-item"><a href = '/schedule' id = "navStyle" class = "nav-link">Schedule</a></li>
 						</ul>
 						
-						<div class = "g-signin2" data-onsuccess = "onSignIn"></div>						
-						
-						<p>Profile Details</p>
-						<div class = "data">
-							<img id = "pic" class = "img-circle" width = "100" height = "100"/>
-							<p>Email Address:</p>
-							<p id = "email" class = "alert alert-danger"></p>
-							<button onclick = "signOut()" class = "btn btn-danger">SignOut</button>
-						</div>
-						
+						<GoogleLogin
+							clientId = "122146894892-ouqdfmr7105f55aiim0vg1glrcf0atnk.apps.googleusercontent.com"
+							buttonText = "Login"
+							onSuccess = {this.responseGoogleSuccess}
+							onFailure = {this.responseGoogleFail}
+						/>
 					</div>
 				</div>
 			</nav>
