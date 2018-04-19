@@ -13,7 +13,7 @@ class Default extends Component {
 				<div className="row">
 					<div className="col-sm-4">
 						<h3>Find Recipes</h3>
-						<p>With our simple web scrapper, we avoid recipes with similar ingredients.</p>
+						<p>Using the Yummly API, our site allows you to search for any of your favorite foods and find recipes that suit your needs!</p>
 						<p>That way you are looking at unique variants of each recipe you view!</p>
 					</div>
 					<div className="col-sm-4">

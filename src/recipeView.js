@@ -52,7 +52,7 @@ class RecipeView extends Component {
 			return (
 				<div>
 					<div class = "row recipe">
-						<div class = "col-4">
+						<div class = "col-md-4">
 							<br/>
 							<h1 class = "text-warning my-0">{starString}</h1>
 							<img class = "resultImg" src = {this.state.jsonData.images["0"].hostedLargeUrl}/>
@@ -64,10 +64,10 @@ class RecipeView extends Component {
 								</Link>
 						</div>
 						
-						<div class = "col-8">
+						<div class = "col-md-8">
 							<br/>
 							<div class = "row">
-								<div class = "col-5 text-left">
+								<div class = "col-md-5">
 									<h3 class = "text-primary">Ingredients</h3>
 									{this.state.jsonData.ingredientLines.map((entry, i) =>
 										<h4>{entry}</h4>
@@ -77,7 +77,7 @@ class RecipeView extends Component {
 									<h4>Preperation and cooking time: {this.state.jsonData.totalTime}</h4>
 									<h4>Yield: {this.state.jsonData.yield}</h4>
 								</div>
-								<div class = "col-3 text-center">
+								<div class = "col-md-3 text-center">
 									<h3 class = "text-primary">More data will be available here</h3>
 								</div>
 							</div>

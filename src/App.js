@@ -68,7 +68,7 @@ class App extends Component {
 						{this.state.loggedIn &&
 						<div className = "row">
 							<img src = {this.state.picUrl} id = "pic" className = "img-circle" width = "50" height = "50" />
-							<p id = "email" className = "alert alert-danger">{this.state.email}</p>
+							<p id = "email" className = "alert text-primary">{this.state.email}</p>
 						</div>
 						}
 					</div>

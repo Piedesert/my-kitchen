@@ -75,10 +75,10 @@ class Search extends Component {
 				
 				{this.state.val != "" && this.state.jsonData.map((entry, i)=>
 					<div class = "queryDiv row" id = "result">
-						<div class = "col-1">
+						<div class = "col-md-1">
 							<img class = "resultImg" src = {entry.smallImageUrls[0]}/>
 						</div>
-						<div class = "col-11">
+						<div class = "col-md-11">
 							<Link to = {"/recipes/" + entry.id} params = {{recipeID: entry.id}}><h3>{entry.recipeName} 
 							&nbsp;({entry.rating} <span class="glyphicon glyphicon-star"></span>)</h3></Link>
 							<h4>
