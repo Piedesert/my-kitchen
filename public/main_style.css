@@ -52,6 +52,7 @@ a:active{
 #recipeNavTitle{
 	color: #a8c2ea;
 	display: block;
+	margin-bottom: 3px;
 	font-family: Helvetica;
 	font-size: 1.5em;
 	transition: color .25s ease-in-out;
@@ -131,5 +132,17 @@ a:active{
 	transition: background .25s ease-in-out;
 	-moz-transition: background .25s ease-in-out;
 	-webkit-transition: background .25s ease-in-out;
+	text-decoration: none;
+}
+
+.recipe{
+	font-family: Helvetica;
+	color: #333;
+	padding: 1em;
+	font-size: 1em;
+	background: #eee;
+	border: 2px ridge #a8c2ea;
+	border-radius: 0.5em;
+	margin: 0.5em;
 	text-decoration: none;
 }

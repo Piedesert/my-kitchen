@@ -40,7 +40,7 @@ class App extends Component {
 	
   render() {
     return (
-		<div className="App">
+		<div className = "App">
 			<nav class = "navbar navbar-fixed-top navbar-expand-lg navbar-light bg-dark" id = "navStyle">
 				<div class = "container-fluid">	
 					

@@ -43,13 +43,13 @@ class RecipeView extends Component {
 			
 			return (
 				<div>
-					<div class = "row">
+					<div class = "row recipe">
 						<div class = "col-4">
 							<br/>
 							<h1 class = "text-warning my-0">{starString}</h1>
-							<img src = {this.state.jsonData.images["0"].hostedLargeUrl}/>
+							<img class = "resultImg" src = {this.state.jsonData.images["0"].hostedLargeUrl}/>
 							<h1>{this.state.jsonData.name}</h1>
-							<p><a href = {this.state.jsonData.source.sourceRecipeUrl}>{this.state.jsonData.source.sourceDisplayName}</a></p>
+							<p>Source: <a href = {this.state.jsonData.source.sourceRecipeUrl}>{this.state.jsonData.source.sourceDisplayName}</a></p>
 							<br/>
 							<button class = "btn btn-lg btn-outline-secondary" type = "button">Add Meal to your Schedule!</button>
 						</div>
@@ -57,17 +57,17 @@ class RecipeView extends Component {
 						<div class = "col-8">
 							<br/>
 							<div class = "row">
-								<div class = "col-4 text-left">
+								<div class = "col-5 text-left">
 									<h3 class = "text-primary">Ingredients</h3>
 									{this.state.jsonData.ingredientLines.map((entry, i) =>
-										<p class = "small">{entry}</p>
+										<h4>{entry}</h4>
 									)}
 									<br/>
 									<h3 class = "text-primary">Information</h3>
-									<p class = "small">Preperation and cooking time: {this.state.jsonData.totalTime}</p>
-									<p class = "small">Yield: {this.state.jsonData.yield}</p>
+									<h4>Preperation and cooking time: {this.state.jsonData.totalTime}</h4>
+									<h4>Yield: {this.state.jsonData.yield}</h4>
 								</div>
-								<div class = "col-8 text-center">
+								<div class = "col-3 text-center">
 									<h3 class = "text-primary">More data will be available here</h3>
 								</div>
 							</div>
