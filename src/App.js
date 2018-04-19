@@ -53,7 +53,7 @@ class App extends Component {
 					<div className = "collapse navbar-collapse" id = "navbarResponsive">						
 						<ul className = "navbar-nav mr-auto mk-navbar">
 							<li className = "nav-item"><a href = '/search' id = "navStyle" className = "nav-link">Find Recipes</a></li>
-							<li className = "nav-item"><a href = '/schedule' id = "navStyle" className = "nav-link">Schedule</a></li>
+							<li className = "nav-item"><a href = '/schedule/main' id = "navStyle" className = "nav-link">Schedule</a></li>
 						</ul>
 						
 						{!this.state.loggedIn &&
@@ -79,7 +79,7 @@ class App extends Component {
 				<div>
 					<Route path = "/home" component = {Default}/>
 					<Route path = "/search" render = {(props) => <Search val={""}/>}/>
-					<Route path = "/schedule" component = {Schedule}/>
+					<Route path = "/schedule/:recipeID" component = {Schedule}/>
 					<Route path = "/recipes/:recipeID" component = {RecipeView}/>
 				</div>
 			</Router>

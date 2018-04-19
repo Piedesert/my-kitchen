@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Switch,
+  Redirect
+} from 'react-router-dom';
+
 class RecipeView extends Component {
 	constructor(props) {
 		super(props);
@@ -51,7 +59,9 @@ class RecipeView extends Component {
 							<h1>{this.state.jsonData.name}</h1>
 							<p>Source: <a href = {this.state.jsonData.source.sourceRecipeUrl}>{this.state.jsonData.source.sourceDisplayName}</a></p>
 							<br/>
-							<button class = "btn btn-lg btn-outline-secondary" type = "button">Add Meal to your Schedule!</button>
+								<Link to = {"/schedule/" + this.state.recipe} params = {{recipeID: this.state.recipe}}>
+									Add Meal to your Schedule!
+								</Link>
 						</div>
 						
 						<div class = "col-8">
