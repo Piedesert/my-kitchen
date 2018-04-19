@@ -2,6 +2,29 @@ import React, { Component } from 'react';
 
 class Schedule extends Component {
 	render() {
+		// Format arrays for month, day, and year.
+		const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		let days = [];
+		
+		for (var i = 0; i < 31; i++) {
+			days[i] = i + 1;
+		}
+		
+		let years = [];
+		
+		for (var i = 0; i < 10; i++) {
+			years[i] = 2018 + i;
+		}
+		
+		// Format arrays for hours.
+		let hours = [];
+		
+		for (var i = 0; i < 12; i++) {
+			hours[i] = i;
+		}
+		
+		const minutes = ["00", "15", "30", "45"];
+		
 		return (
 			<div className = "container-fluid">
 				<div class = "row">
@@ -23,18 +46,52 @@ class Schedule extends Component {
 							<input type="text" class="form-control" placeholder="" aria-label="RecipeURL" aria-describedby="basic-addon2"/>
 						</div>
 						
-						<div class = "col-6">
-							<div class = "input-group mb-3">
-								<select class="custom-select" id="month">
-								</select>
-								<select class="custom-select" id="day">
-								</select>
-								<select class="custom-select" id="year">
-								</select>
+						<div class = "row">
+							<div class = "col-5">
+								<div class = "input-group mb-3">
+									<select class="custom-select" id="month">
+										<option selected>Month</option>
+										{months.map((entry, i) =>
+											<option value = "{i}">{entry}</option>
+										)}
+									</select>
+									<select class="custom-select" id="day">
+										<option selected>Day</option>
+										{days.map((entry, i) =>
+											<option value = "{i}">{entry}</option>
+										)}
+									</select>
+									<select class="custom-select" id="year">
+										<option selected>Year</option>
+										{years.map((entry, i) =>
+											<option value = "{i}">{entry}</option>
+										)}
+									</select>
+								</div>
 							</div>
-						</div>
-						
-						<div class = "col-6">
+							<div class = "col-2">
+								<p>at</p>
+							</div>
+							<div class = "col-5">
+								<div class = "input-group mb-3">
+									<select class="custom-select" id="hour">
+										<option selected>Hour</option>
+										{hours.map((entry, i) =>
+											<option value = "{i}">{entry}</option>
+										)}
+									</select>
+									<select class="custom-select" id="minute">
+										<option selected>Minute</option>
+										{minutes.map((entry, i) =>
+											<option value = "{i}">{entry}</option>
+										)}
+									</select>
+									<select class="custom-select" id="amorpm">
+										<option selected>AM</option>
+										<option>PM</option>
+									</select>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
