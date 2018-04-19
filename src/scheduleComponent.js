@@ -75,14 +75,14 @@ class Schedule extends Component {
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon1">Recipe Name</span>
 								</div>
-								<input type="text" class="form-control" placeholder={this.state.recipeName} aria-label="RecipeName" aria-describedby="basic-addon1"/>
+								<input type="text" class="form-control" value={this.state.recipeName} aria-label="RecipeName" aria-describedby="basic-addon1"/>
 							</div>
 							
 							<div class="input-group mb-3">
 								<div class="input-group-prepend">
 									<span class="input-group-text" id="basic-addon2">Recipe URL</span>
 								</div>
-								<input type="text" class="form-control" placeholder={this.state.recipeUrl} aria-label="RecipeURL" aria-describedby="basic-addon2"/>
+								<input type="text" class="form-control" value={this.state.recipeUrl} aria-label="RecipeURL" aria-describedby="basic-addon2"/>
 							</div>
 							
 							<div class = "row">
@@ -130,6 +130,12 @@ class Schedule extends Component {
 											<option>PM</option>
 										</select>
 									</div>
+								</div>
+							</div>
+							
+							<div class = "row text-center">
+								<div class = "col-12">
+									<button class="btn btn-outline-secondary btn-lg" type="button">Submit</button>
 								</div>
 							</div>
 						</div>
